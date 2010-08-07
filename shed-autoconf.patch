@@ -1,11 +1,13 @@
---- shed-1.14/configure.in~	2008-11-23 15:14:11.000000000 +0100
-+++ shed-1.14/configure.in	2008-11-24 08:54:11.000000000 +0100
-@@ -17,7 +17,7 @@
-   CFLAGS="$CFLAGS -DSHED_CYGFIX"
+--- shed-1.15/configure.in.orig	2009-03-24 14:42:32.000000000 +0100
++++ shed-1.15/configure.in	2010-08-07 21:38:47.051969441 +0200
+@@ -41,8 +41,9 @@ else
  fi
+ 
  ERR="Required package missing!"
 -AC_CHECK_HEADER(ncurses.h,:,AC_MSG_ERROR([$ERR]))
 +AC_CHECK_HEADER(ncurses/ncurses.h,:,AC_MSG_ERROR([$ERR]))
  AC_CHECK_HEADER(getopt.h,:,AC_MSG_ERROR([$ERR]))
++AC_CHECK_LIB(tinfo,halfdelay)
  AC_CHECK_LIB(ncurses,initscr)
  AC_CHECK_LIB(m,pow)
+ AC_OUTPUT(Makefile)

@@ -2,12 +2,12 @@
 Summary:	shed - a simple hex editor
 Summary(pl.UTF-8):	Prosty hex-edytor
 Name:		shed
-Version:	1.14
+Version:	1.15
 Release:	1
 License:	GPL v2
 Group:		Applications
-Source0:	http://dl.sourceforge.net/shed/%{name}%{version}.tar.gz
-# Source0-md5:	90c70fa667641dd04decaaec4b5ccaa3
+Source0:	http://dl.sourceforge.net/shed/%{name}-%{version}.tar.gz
+# Source0-md5:	c7d7d464d6b4fa28a7980270d03e0906
 Patch0:		%{name}-autoconf.patch
 URL:		http://shed.sourceforge.net/
 BuildRequires:	autoconf
