@@ -3,7 +3,7 @@ Summary:	shed - a simple hex editor
 Summary(pl.UTF-8):	Prosty hex-edytor
 Name:		shed
 Version:	1.15
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications
 Source0:	http://dl.sourceforge.net/shed/%{name}-%{version}.tar.gz
